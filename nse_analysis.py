@@ -66,7 +66,9 @@ def get_headers():
     }
 
 def fetch_nifty50_data():
-    url = 'https://www.nseindia.com/api/equity-stockIndices?index=NIFTY%2050'
+    url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=YYIOQCNUTV2SGSBC'
+    home_url = 'https://www.nseindia.com'
+    # url = 'https://www.nseindia.com/api/equity-stockIndices?index=NIFTY%2050'
     max_retries = 3
     retry_delay = 5
 
