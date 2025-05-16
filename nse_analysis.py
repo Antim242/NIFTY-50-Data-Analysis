@@ -1,3 +1,59 @@
+# def fetch_nifty50_data():
+#     url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=YYIOQCNUTV2SGSBC'
+#     home_url = 'https://www.nseindia.com'
+
+#     session = requests.Session()
+#     headers = {
+#         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+#         "Accept-Language": "en-US,en;q=0.9",
+#         "Accept-Encoding": "gzip, deflate, br",
+#         "Accept": "application/json",
+#         "Referer": "https://www.nseindia.com/",
+#         "Connection": "keep-alive"
+#     }
+#     session.headers.update(headers)
+
+#     try:
+#         # Visit homepage to get necessary cookies
+#         response = session.get(home_url, timeout=10)
+#         response.raise_for_status()
+#         time.sleep(1)
+
+#         # Now access the API with session and cookies
+#         response = session.get(url, timeout=10)
+#         if response.status_code == 200:demo
+#             data = response.json()
+#             df = pd.DataFrame(data['data'])
+
+#             for col in ['pChange', 'yearHigh', 'yearLow', 'lastPrice']:
+#                 df[col] = pd.to_numeric(df[col], errors='coerce')
+
+#             return df
+#         else:
+#             print(f"Failed to fetch data: Status code {response.status_code}")
+
+#     except Exception as e:
+#         print(f"Error occurred: {e}")
+
+#     return None
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import requests
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -90,3 +146,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
