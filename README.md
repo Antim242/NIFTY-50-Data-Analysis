@@ -76,7 +76,14 @@ A `matplotlib` bar chart was generated and saved to visualize the top 5 gainers 
 ### **Visualization:**
 - A bar chart named `gainers_losers.png` was successfully generated and saved.
 
----
+------
+
+### **Visualization:**
+- A bar chart named `gainers_losers.png` was successfully generated and saved.
+
+------
+
+
 
 ## **Conclusion**
 The script successfully fetches and analyzes NIFTY 50 data, meeting all given requirements. 
